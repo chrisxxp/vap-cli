@@ -10,7 +10,8 @@
     "项目模板"
   ],
   "bin": {
-    "vap": "index.js"
+    "vap": "index.js",
+    "vap-cli": "index.js"
   },
   "author": "chrisxxp",
   "license": "ISC",

@@ -8,8 +8,10 @@ const fs = require('fs');
 var inquirer = require('inquirer');
 const config = require('./config').config
 const path = require('path')
+const version = require('./package.json').version
+console.log(version)
 
-program.version('1.0.0', '-v, --version')
+program.version(version, '-v, --version')
     .command('init <name>')
     .action((name) => {
         if (fs.existsSync(name)) {
