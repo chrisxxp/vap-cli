@@ -9,7 +9,6 @@ var inquirer = require('inquirer');
 const config = require('./config').config
 const path = require('path')
 const version = require('./package.json').version
-console.log(version)
 
 program.version(version, '-v, --version')
     .command('init <name>')
